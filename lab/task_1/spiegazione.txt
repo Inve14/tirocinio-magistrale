@@ -1,0 +1,235 @@
+================================================================
+SPIEGAZIONE DEL CODICE — Task 1
+Tirocinio: "Profili evolutivi multilivello di reti complesse
+           tramite temporal network motif"
+================================================================
+
+OBIETTIVO
+---------
+Analizzare una rete temporale per trovare quali pattern di
+interazione (motif) si ripetono, quanto sono frequenti e se
+sono statisticamente significativi rispetto a reti casuali.
+
+Il codice è la traduzione in Python della repo C++ KDD23-MTM
+(paper: "Using Motif Transitions for Temporal Graph Generation",
+KDD 2023 — Liu, Penghang & Sarıyüce, Ahmet Erdem).
+
+================================================================
+FORMATO DEI DATI IN INPUT
+================================================================
+
+Il dataset è una lista di eventi temporali, un evento per riga:
+
+    utente_A  utente_B  timestamp
+
+Ogni riga rappresenta un'interazione diretta tra due utenti
+al tempo indicato dal timestamp (in secondi Unix).
+
+Dataset usati:
+- facebook_wall (ia-facebook-wall-wosn-dir.edges)
+  264.004 eventi, 45.813 nodi
+- CollegeMsg (CollegeMsg.txt) — Stanford SNAP
+  59.835 eventi, 1.899 nodi
+
+================================================================
+STEP 1 — create_events() — LETTURA DEI DATI
+================================================================
+
+Legge il file di input riga per riga, crea una lista di eventi
+ordinati per timestamp e rimuove i duplicati esatti.
+Ignora i self-loop (utente che interagisce con se stesso).
+Restituisce la lista di eventi e l'insieme dei nodi (vertici).
+
+================================================================
+STEP 2 — TMC: run_tmc() — CONTEGGIO DEI MOTIF
+================================================================
+
+TMC = Temporal Motif Counting
+
+Scorre gli eventi uno alla volta e cerca sequenze di eventi
+collegati che si ripetono entro una finestra temporale delta
+(parametro DELTA, default = 86400 secondi = 1 giorno).
+
+Un MOTIF è una sequenza temporale di archi connessi. Esempio:
+
+    A→B (t=0h), B→C (t=3h), A→C (t=5h)
+
+Ogni motif viene codificato come stringa dove ogni coppia di
+cifre rappresenta un arco diretto:
+
+    "010213" significa:
+        - evento 1: nodo_0 → nodo_1  (A→B)
+        - evento 2: nodo_0 → nodo_2  (A→C... aspetta B→C)
+        
+    Le cifre sono assegnate in ordine di prima apparizione:
+        A=0, B=1, C=2, D=3, E=4 ...
+
+Esempi di codici motif:
+    "0102"     → A→B, A→C           (wedge, 2 eventi, 3 nodi)
+    "010203"   → A→B, A→C, A→D      (hub, 3 eventi, 4 nodi)
+    "01020304" → A→B, A→C, A→D, A→E (hub, 4 eventi, 5 nodi)
+    "01101213" → A→B, B→A, B→C, B→D (reciprocità + fan-out)
+
+Il risultato è un dizionario: codice_motif → numero occorrenze.
+
+Parametri principali:
+    L_MAX = 4      numero massimo di eventi per motif
+    DELTA = 86400  finestra temporale in secondi (1 giorno)
+    consecutive = NO  i prefissi non vengono consumati
+
+================================================================
+STEP 3 — MTM: run_mtm() — APPRENDIMENTO E GENERAZIONE
+================================================================
+
+MTM = Motif Transition Model
+
+FASE A — Apprendimento della tabella di transizione:
+Analizza i motif trovati e costruisce una tabella che dice:
+"dopo aver visto il pattern X, con che probabilità il prossimo
+evento produce il pattern Y?"
+
+Per ogni transizione apprende anche il tempo medio tra un
+evento e l'altro, modellato come distribuzione esponenziale
+(parametro lambda = 1 / tempo_medio).
+
+FASE B — Generazione del grafo sintetico:
+Parte dagli eventi iniziali (quelli che non si collegano a
+nessun prefisso precedente), li randomizza preservando la
+degree sequence (RandomizeIE), poi genera nuovi eventi
+seguendo le probabilità di transizione apprese.
+
+Il grafo generato ha:
+- stessa struttura statistica della rete originale
+- stessa distribuzione temporale degli inter-arrival time
+- stessa degree distribution (approssimata)
+
+Parametro K = numero di grafi sintetici da generare.
+
+================================================================
+STEP 4 — NULL MODELS — RANDOMIZZAZIONI
+================================================================
+
+Per capire se i motif trovati sono significativi o casuali,
+vengono generate 3 versioni randomizzate della stessa rete:
+
+NULL MODEL 1 — Time Shuffle:
+    I timestamp vengono rimescolati casualmente tra gli archi.
+    Preserva: struttura degli archi (chi parla con chi).
+    Distrugge: correlazioni temporali.
+    Domanda: "il motif dipende dall'ordine temporale?"
+
+NULL MODEL 2 — Edge Shuffle (Configuration Model):
+    Gli archi vengono rimescolati preservando la degree sequence.
+    Preserva: timestamp e numero di interazioni per nodo.
+    Distrugge: struttura della rete.
+    Domanda: "il motif dipende da chi parla con chi?"
+
+NULL MODEL 3 — Watts-Strogatz (Small-World):
+    Genera una rete completamente diversa (ring lattice + rewiring
+    casuale con probabilità p=0.1) con gli stessi nodi e timestamp
+    campionati dalla distribuzione reale.
+    Preserva: numero di nodi e distribuzione temporale.
+    Distrugge: tutta la struttura originale.
+    Domanda: "il motif è specifico di questa rete sociale?"
+
+Su ciascuna delle 3 reti randomizzate viene eseguito TMC e
+i risultati vengono confrontati con la rete reale.
+
+================================================================
+STEP 5 — ENRICHMENT SCORE — SIGNIFICATIVITA' STATISTICA
+================================================================
+
+Per ogni motif viene calcolato l'enrichment score:
+
+    enrichment = count_reale / media(count_null_models)
+
+Interpretazione:
+    enrichment > 1  →  il motif è SOVRA-RAPPRESENTATO nella
+                        rete reale rispetto alle versioni casuali
+                        → è statisticamente significativo
+                        → cattura una struttura reale della rete
+
+    enrichment < 1  →  il motif è SOTTO-RAPPRESENTATO
+                        → è più frequente nelle reti casuali
+                        → non è caratteristico di questa rete
+
+================================================================
+STEP 6 — VISUALIZZAZIONE GRAFICA DEI MOTIF
+================================================================
+
+Ogni codice motif viene tradotto nel suo grafo:
+    - Cifre = nodi (0,1,2,3... in ordine di prima apparizione)
+    - Coppie di caratteri = archi diretti
+    - Colore freccia = ordine temporale
+      (chiaro=primo evento, scuro=ultimo evento)
+    - Label t0, t1, t2, t3 = indice temporale dell'arco
+
+I grafici vengono salvati in output_png/.
+I file di dati vengono salvati in output_data/.
+
+================================================================
+SCHEMA RIASSUNTIVO
+================================================================
+
+    Dataset reale (.edges / .txt)
+           |
+           v
+    create_events()
+    → lista eventi ordinati per timestamp
+           |
+           v
+    run_tmc()  — Temporal Motif Counting
+    → dizionario: codice_motif → conteggio
+           |
+           v
+    run_mtm()  — Motif Transition Model
+    → apprende tabella di transizione
+    → genera grafo sintetico simile all'originale
+           |
+           v
+    Null Models (Time Shuffle, Edge Shuffle, Strogatz)
+    → 3 versioni randomizzate della stessa rete
+    → TMC su ciascuna
+           |
+           v
+    Enrichment Score
+    → motif statisticamente significativi (enrichment > 1)
+           |
+           v
+    Visualizzazione grafica dei motif
+    → gallery dei top motif con grafo nodi/archi
+
+================================================================
+PARAMETRI USATI
+================================================================
+
+    L_MAX      = 4       numero massimo di eventi per motif
+    DELTA      = 86400   finestra temporale (1 giorno in secondi)
+    K          = 1       numero di grafi sintetici generati
+    consecutive= NO      prefissi non consumati dopo estensione
+    N_SAMPLE   = 3000    eventi usati (facebook) / 5000 (SNAP)
+    k_neighbors= 4       vicini nel ring lattice Watts-Strogatz
+    p_rewire   = 0.1     probabilità di rewiring Watts-Strogatz
+
+================================================================
+CONNESSIONE CON LA TESI
+================================================================
+
+Questa task costituisce la base dell'analisi multilivello:
+
+    Livello LOCALE (nodo):
+    → i motif descrivono il comportamento di ogni singolo nodo
+      e delle sue interazioni immediate
+
+    Livello MESOSCOPICO (gruppi di nodi):
+    → i pattern di transizione tra motif descrivono come si
+      formano e evolvono i sottografi locali
+
+    Livello GLOBALE (grafo intero):
+    → l'enrichment score e la distribuzione dei motif
+      descrivono le proprietà strutturali globali della rete
+
+    Il modello MTM apprende come la rete "evolve" nel tempo
+    seguendo i pattern di transizione tra motif successivi,
+    permettendo di generare reti sintetiche che preservano
+    le proprietà evolutive della rete originale.
