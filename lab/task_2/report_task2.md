@@ -13,12 +13,11 @@
 2. [Algoritmo EvoMine](#2-algoritmo-evomine)
 3. [Dataset](#3-dataset)
 4. [Setup e criticità tecniche](#4-setup-e-criticità-tecniche)
-5. [Risultati — DBLP 2003-05 (output precomputed GERM)](#5-risultati--dblp-2003-05-output-precomputed-germ)
-6. [Risultati — CollegeMsg](#6-risultati--collegemsg)
-7. [Risultati — Facebook Wall](#7-risultati--facebook-wall)
-8. [Confronto tra i due dataset](#8-confronto-tra-i-due-dataset)
-9. [Confronto con MTM/TMC (Task 1)](#9-confronto-con-mtmtmc-task-1)
-10. [Conclusioni](#10-conclusioni)
+5. [Risultati — CollegeMsg](#5-risultati--collegemsg)
+6. [Risultati — Facebook Wall](#6-risultati--facebook-wall)
+7. [Confronto tra i due dataset](#7-confronto-tra-i-due-dataset)
+8. [Confronto con MTM/TMC (Task 1)](#8-confronto-con-mtmtmc-task-1)
+9. [Conclusioni](#9-conclusioni)
 
 ---
 
@@ -80,6 +79,8 @@ Dataset grezzo → Conversione in formato GER → EvoMine binary → Output rego
 
 ![Distribuzione temporale](output_png/temporal_dist_both.png)
 
+Sull'asse x sono riportati gli indici temporali discretizzati (bucket 1..T), dove ogni bucket corrisponde a un giorno (CollegeMsg) o una settimana (Facebook Wall). Sull'asse y è riportato il numero di archi con quel timestamp discretizzato. A x=100 corrisponde quindi il numero di archi nel bucket t=100.
+
 | Dataset | Archi | Nodi | Span | Bucket usati |
 |---------|-------|------|------|-------------|
 | **CollegeMsg** | 59,835 | 1,899 | 193.7 giorni | Giornalieri (1..194) |
@@ -105,10 +106,25 @@ docker run --rm -w /EvoMine \
 ### 4.2 Discretizzazione dei timestamp
 Il problema più critico incontrato: EvoMine crea uno **snapshot del grafo per ogni timestamp unico**. Con timestamp Unix epoch (es. 1082040961), questo genera 59,835 snapshot → out of memory (exit 137).
 
-**Soluzione:** discretizzare i timestamp in bucket prima della conversione:
+**Soluzione:** l'approccio corretto consiste nel:
+1. Convertire i timestamp Unix in datetime.
+2. Ordinarli e tagliarli al giorno (es. `2020-01-02`).
+3. Assegnare `t=0` alla prima data, `t=1` alla seconda, ecc.
+4. Tutti gli archi dello stesso giorno avranno lo stesso `t`.
+
+Questo è corretto perché EvoMine crea uno snapshot per ogni `t` distinto, e con questa discretizzazione si hanno tanti snapshot quanti sono i **giorni distinti** (non i secondi).
+
 ```python
-bucket = (ts - ts_min) // 86400 + 1   # bucket giornalieri per CollegeMsg
-bucket = (ts - ts_min) // 604800 + 1  # bucket settimanali per Facebook
+import pandas as pd
+
+# Converti timestamp Unix in datetime e taglia al giorno
+df['datetime'] = pd.to_datetime(df['timestamp'], unit='s')
+df['date'] = df['datetime'].dt.date
+
+# Assegna indice progressivo per giorno
+unique_dates = sorted(df['date'].unique())
+date_to_t = {date: t for t, date in enumerate(unique_dates)}
+df['t_bucket'] = df['date'].map(date_to_t)
 ```
 
 ### 4.3 Support threshold per CollegeMsg
@@ -116,54 +132,7 @@ Con support=1000 e support=5000, il mining si bloccava su singoli pattern candid
 
 ---
 
-## 5. Risultati — DBLP 2003-05 (output precomputed GERM)
-
-Il toolkit GERANIO include un output GERM precomputed sul dataset di co-authorship DBLP 2003-2005 (support=5000, max_edges=3, non diretto).
-
-### Statistiche
-
-| Metrica | Valore |
-|---------|--------|
-| Regole trovate | 20 |
-| Support range | 5,054 — 109,044 |
-| Support mediano | 10,297 |
-| Peso totale | 529,964 |
-
-### Gallery delle 20 regole
-
-![Gallery pattern DBLP](output_png/dblp_all_patterns_gallery.png)
-
-Gli archi **blu** sono la precondizione (t=0), gli archi **verdi** sono la postcondizione (t>0). Le prime 5 regole (riga 1) hanno t-span=0: sono sottografi statici senza postcondizione esplicita. Le righe successive mostrano vere evoluzioni body→head.
-
-### Profilo evolutivo
-
-![Profilo evolutivo DBLP](output_png/dblp_evolutionary_profile.png)
-
-Decadimento quasi a legge di potenza: le prime 5 regole pesano ~74% del supporto totale. Forte drop tra la regola 4 (~0.107) e la regola 5 (~0.028).
-
-### Distribuzione supporto e dimensione pattern
-
-![Distribuzione supporto DBLP](output_png/dblp_pattern_support_dist.png)
-
-16 delle 20 regole hanno 3 archi totali; 3 ne hanno 2; solo 1 ne ha 1.
-
-### Analisi T-Span
-
-![T-Span DBLP](output_png/dblp_tspan.png)
-
-- T-span 0 (25%): pattern statici, tutti gli archi a t=0
-- T-span 1 (40%): evoluzione immediata al passo successivo
-- T-span 2 (35%): evoluzione in 2 passi temporali
-
-### Esempio di regola visualizzata
-
-![Esempio regola GERM](output_png/example_rule_germ.png)
-
-La regola mostra una catena di 4 nodi (precondizione) → stessa struttura mantenuta (postcondizione). Regola 3 con support=68,876.
-
----
-
-## 6. Risultati — CollegeMsg
+## 5. Risultati — CollegeMsg
 
 **Parametri:** support=20000, max_edges=3, directed, bucket giornalieri
 
@@ -188,7 +157,7 @@ La regola mostra una catena di 4 nodi (precondizione) → stessa struttura mante
 
 ---
 
-## 7. Risultati — Facebook Wall
+## 6. Risultati — Facebook Wall
 
 **Parametri:** support=500, max_edges=3, directed, bucket settimanali, campione 10,000 archi
 
@@ -213,7 +182,7 @@ La regola mostra una catena di 4 nodi (precondizione) → stessa struttura mante
 
 ---
 
-## 8. Confronto tra i due dataset
+## 7. Confronto tra i due dataset
 
 ![Heatmap comparativa](output_png/comparison_heatmap.png)
 
@@ -237,7 +206,7 @@ Questa differenza è coerente con quanto osservato nel Task 1 con TMC/MTM: Colle
 
 ---
 
-## 9. Confronto con MTM/TMC (Task 1)
+## 8. Confronto con MTM/TMC (Task 1)
 
 | Dimensione | MTM / TMC (Task 1) | EvoMine / GERM (Task 2) |
 |-----------|-------------------|------------------------|
@@ -255,7 +224,7 @@ Questa differenza è coerente con quanto osservato nel Task 1 con TMC/MTM: Colle
 
 ---
 
-## 10. Conclusioni
+## 9. Conclusioni
 
 1. **EvoMine mina regole causali**, non solo pattern ricorrenti — la postcondizione rende le regole direttamente interpretabili come predizioni.
 
