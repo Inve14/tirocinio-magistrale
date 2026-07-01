@@ -1,0 +1,24 @@
+=== Inter-event Time Statistics — CollegeMsg Sample ===
+Dataset:   /Users/inve14/Desktop/UnInve/Tirocinio/lab/task_1/task_1_SNAP/CollegeMsg.txt
+N eventi:  5000
+Periodo:   1343538s = 15.6 giorni
+
+--- Statistiche IET (delta_t > 0) ---
+N campioni:   4970
+Media:        270.3s  (0.08h)
+Std dev:      4132.9s
+Percentile 25:18.0s  (0.01h)
+Mediana (P50):47.0s  (0.01h)
+Percentile 75:123.0s  (0.03h)
+Percentile 95:629.1s  (0.17h)
+Max:          258552.0s  (2.99g)
+
+--- Copertura per granularità ---
+1 ora (3600s): 99.4% IET coperto, 374 bucket, ~13.4 eventi/bucket
+6 ore (21600s): 99.9% IET coperto, 63 bucket, ~79.4 eventi/bucket
+12 ore (43200s): 100.0% IET coperto, 32 bucket, ~156.2 eventi/bucket
+1 giorno (86400s): 100.0% IET coperto, 16 bucket, ~312.5 eventi/bucket
+1 settimana (604800s): 100.0% IET coperto, 3 bucket, ~1666.7 eventi/bucket
+
+--- Granularità raccomandata per EvoMine ---
+sub-oraria (es. 15min = 900s o 30min = 1800s)  (1800s)
