@@ -1,0 +1,40 @@
+=== Task 3 — Analisi Granularità Temporale per EvoMine ===
+Dataset:  /Users/inve14/Desktop/UnInve/Tirocinio/lab/task_3/output_data/collegemsg_sample_5000.txt
+N eventi: 5,000
+Periodo:  2004-04-15 14:56:01 -> 2004-05-01 04:08:19
+Durata:   1343538s = 15.55 giorni
+
+--- Analisi 1: distribuzione oraria ---
+Numero di ore nel periodo: 375
+Eventi/ora - media: 13.3, mediana: 2.0, max: 151
+Ore senza eventi: 159 / 375 (42.4%)
+Grafico: collegemsg_hourly_distribution.png
+
+--- Analisi 2: inter-event time (IET) ---
+N campioni (delta_t > 0): 4,970  (delta_t = 0 esclusi: 29)
+Media:    270.3s
+Mediana:  47.0s
+P25:      18.0s
+P75:      123.0s
+P95:      629.1s
+P99:      2122.7s
+Max:      258552.0s (2.99 giorni)
+Grafico: collegemsg_iet_distribution.png
+
+--- Tabella granularità candidate ---
+Granularità  Secondi  % IET entro 1 bucket  # bucket totali stimati
+  30 minuti     1800                  98.6                      747
+      1 ora     3600                  99.4                      374
+      6 ore    21600                  99.9                       63
+     12 ore    43200                 100.0                       32
+   1 giorno    86400                 100.0                       16
+
+--- Preprocessing GER per granularità candidate ---
+Nodi (stesso set per tutti i file): 530
+
+Granularità                     File  # bucket totali  # bucket non vuoti  # bucket vuoti  eventi/bucket (media)  eventi/bucket (min)  eventi/bucket (max)  # coppie stesso bucket
+  30 minuti collegemsg_ger_30min.txt              747                 388             359                  12.89                    1                   97                   75172
+      1 ora    collegemsg_ger_1h.txt              374                 216             158                  23.15                    1                  157                  142943
+      6 ore    collegemsg_ger_6h.txt               63                  48              15                 104.17                    1                  444                  556002
+     12 ore   collegemsg_ger_12h.txt               32                  26               6                 192.31                    1                  793                 1049896
+   1 giorno    collegemsg_ger_1d.txt               16                  14               2                 357.14                    1                 1006                 1615728
