@@ -26,6 +26,17 @@
 - [ ] EvoMine con projection=event, support=1
 - [ ] Codifica pattern EvoMine con stessa codifica MTM
 
+### Task 4 — Scalabilità TMC ✅ COMPLETATO
+- Benchmark TMC su CollegeMsg al variare di N (500/1000/2000/3000/5000),
+  DELTA=86400s, L_MAX=3, consecutive=YES → tempi tutti <0.1s
+- Benchmark TMC al variare di DELTA (1800/3600/21600/43200/86400s), N=5000
+  → n_motifs distinti costante (60) a tutte le granularità, cresce solo
+  n_instances; tempi dell'ordine di decine di ms (rumore di misura non
+  trascurabile a queste scale)
+- Raccomandazione: N=5000 (intero campione Task 3, tempo trascurabile),
+  DELTA=1800s (30 min) — coerente con analisi IET del Task 3
+- Report: lab/task_4/task4_scalability.ipynb, output_data/scalability_summary.txt
+
 ## Dataset usati
 - CollegeMsg: lab/task_1/task_1_SNAP/CollegeMsg.txt
 - Facebook Wall: lab/task_1/task_1_facebook/ia-facebook-wall-wosn-dir.edges
@@ -46,6 +57,16 @@ lab/
         ├── collegemsg_sample_5000.txt
         ├── mtm_transition_matrix.csv
         └── inter_event_stats.txt
+
+lab/task_4/           ← Scalabilità TMC ✅
+├── task4_scalability.ipynb
+├── output_png/
+│   ├── tmc_scalability.png
+│   └── tmc_delta_scalability.png
+└── output_data/
+    ├── tmc_scalability.csv
+    ├── tmc_delta_scalability.csv
+    └── scalability_summary.txt
 ```
 
 ## Note tecniche importanti
