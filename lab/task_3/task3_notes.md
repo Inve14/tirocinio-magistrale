@@ -63,7 +63,7 @@
 | Aspetto | MTM (Task 3) | EvoMine (prossimo step) |
 |---------|-------------|------------------------|
 | Dataset | CollegeMsg 5000 eventi | CollegeMsg 5000 eventi |
-| Temporalità | Timestamp continui, DELTA=86400s | Bucket discreti (suggerito: sub-oraria, 1800s) |
+| Temporalità | Timestamp continui, DELTA=86400s | Bucket discreti (suggerito: {rec_gran}) |
 | Output chiave | Matrice di transizione P(next\|prefix) | Regole GER: precondizione→postcondizione |
 | Tipo pattern | Sequenze consecutive di archi | Sottografi che evolvono nel tempo |
 | Consecutive | YES (nativo MTM) | N/A (EvoMine usa bucket) |
