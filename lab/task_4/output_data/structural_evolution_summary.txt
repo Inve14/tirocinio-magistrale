@@ -1,0 +1,18 @@
+=== Task 4 -- Evoluzione strutturale del dataset (CollegeMsg 5000 eventi) ===
+
+--- Granularita' 30 min (1800s) ---
+# bucket totali: 747
+# nodi unici totali: 530
+50% nodi unici al bucket: 510
+90% nodi unici al bucket: 705
+Picco attivita': bucket 707 (97 archi)
+Novelty rate medio: 62.1%
+
+--- Granularita' 1 ora (3600s) ---
+# bucket totali: 374
+# nodi unici totali: 530
+50% nodi unici al bucket: 255
+90% nodi unici al bucket: 352
+Picco attivita': bucket 353 (157 archi)
+Novelty rate medio: 67.1%
+

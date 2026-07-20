@@ -1,0 +1,1050 @@
+Running EvoMine (1 jobs)
+filename = /input/collegemsg_ger_30min.txt
+proj = 1
+directed = 1
+min_supp = 1
+max_edges = 3
+
+Reading data and computing projection...
+graph 0 (+1, -0): vcount 530 ecount 1 directed 1 simple 1 multi 0 c 0.0
++++ gap in edge timestamp, ignoring
+graph 63 (+1, -0): vcount 530 ecount 2 directed 1 simple 1 multi 0 c 0.0
++++ gap in edge timestamp, ignoring
+graph 207 (+1, -0): vcount 530 ecount 3 directed 1 simple 1 multi 0 c 0.0
++++ gap in edge timestamp, ignoring
+graph 221 (+4, -0): vcount 530 ecount 7 directed 1 simple 1 multi 0 c 0.0
+graph 222 (+6, -0): vcount 530 ecount 13 directed 1 simple 0 multi 1 c 0.0
+graph 223 (+2, -0): vcount 530 ecount 15 directed 1 simple 0 multi 1 c 0.1
+graph 224 (+1, -0): vcount 530 ecount 16 directed 1 simple 0 multi 1 c 0.1
++++ gap in edge timestamp, ignoring
+graph 227 (+4, -0): vcount 530 ecount 20 directed 1 simple 0 multi 1 c 0.1
++++ gap in edge timestamp, ignoring
+graph 236 (+1, -0): vcount 530 ecount 21 directed 1 simple 0 multi 1 c 0.1
++++ gap in edge timestamp, ignoring
+graph 244 (+1, -0): vcount 530 ecount 22 directed 1 simple 0 multi 1 c 0.1
++++ gap in edge timestamp, ignoring
+graph 249 (+1, -0): vcount 530 ecount 23 directed 1 simple 0 multi 1 c 0.1
++++ gap in edge timestamp, ignoring
+graph 257 (+1, -0): vcount 530 ecount 24 directed 1 simple 0 multi 1 c 0.1
++++ gap in edge timestamp, ignoring
+graph 264 (+4, -0): vcount 530 ecount 28 directed 1 simple 0 multi 1 c 0.1
+graph 265 (+1, -0): vcount 530 ecount 29 directed 1 simple 0 multi 1 c 0.1
++++ gap in edge timestamp, ignoring
+graph 269 (+2, -0): vcount 530 ecount 31 directed 1 simple 0 multi 1 c 0.1
++++ gap in edge timestamp, ignoring
+graph 272 (+1, -0): vcount 530 ecount 32 directed 1 simple 0 multi 1 c 0.1
++++ gap in edge timestamp, ignoring
+graph 276 (+2, -0): vcount 530 ecount 34 directed 1 simple 0 multi 1 c 0.1
+graph 277 (+4, -0): vcount 530 ecount 38 directed 1 simple 0 multi 1 c 0.1
+graph 278 (+1, -0): vcount 530 ecount 39 directed 1 simple 0 multi 1 c 0.1
++++ gap in edge timestamp, ignoring
+graph 296 (+1, -0): vcount 530 ecount 40 directed 1 simple 0 multi 1 c 0.2
+graph 297 (+1, -0): vcount 530 ecount 41 directed 1 simple 0 multi 1 c 0.2
++++ gap in edge timestamp, ignoring
+graph 301 (+1, -0): vcount 530 ecount 42 directed 1 simple 0 multi 1 c 0.2
+graph 302 (+1, -0): vcount 530 ecount 43 directed 1 simple 0 multi 1 c 0.2
+graph 303 (+1, -0): vcount 530 ecount 44 directed 1 simple 0 multi 1 c 0.2
+graph 304 (+3, -0): vcount 530 ecount 47 directed 1 simple 0 multi 1 c 0.2
++++ gap in edge timestamp, ignoring
+graph 308 (+1, -0): vcount 530 ecount 48 directed 1 simple 0 multi 1 c 0.2
+graph 309 (+11, -0): vcount 530 ecount 59 directed 1 simple 0 multi 1 c 0.2
+graph 310 (+5, -0): vcount 530 ecount 64 directed 1 simple 0 multi 1 c 0.2
+graph 311 (+4, -0): vcount 530 ecount 68 directed 1 simple 0 multi 1 c 0.3
+graph 312 (+23, -0): vcount 530 ecount 91 directed 1 simple 0 multi 1 c 0.3
+graph 313 (+2, -0): vcount 530 ecount 93 directed 1 simple 0 multi 1 c 0.4
+graph 314 (+2, -0): vcount 530 ecount 95 directed 1 simple 0 multi 1 c 0.4
+graph 315 (+7, -0): vcount 530 ecount 102 directed 1 simple 0 multi 1 c 0.4
+graph 316 (+9, -0): vcount 530 ecount 111 directed 1 simple 0 multi 1 c 0.4
+graph 317 (+8, -0): vcount 530 ecount 119 directed 1 simple 0 multi 1 c 0.4
+graph 318 (+11, -0): vcount 530 ecount 130 directed 1 simple 0 multi 1 c 0.5
+graph 319 (+5, -0): vcount 530 ecount 135 directed 1 simple 0 multi 1 c 0.5
+graph 320 (+4, -0): vcount 530 ecount 139 directed 1 simple 0 multi 1 c 0.5
+graph 321 (+8, -0): vcount 530 ecount 147 directed 1 simple 0 multi 1 c 0.6
+graph 322 (+12, -0): vcount 530 ecount 159 directed 1 simple 0 multi 1 c 0.6
+graph 323 (+9, -0): vcount 530 ecount 168 directed 1 simple 0 multi 1 c 0.6
+graph 324 (+3, -0): vcount 530 ecount 171 directed 1 simple 0 multi 1 c 0.6
+graph 325 (+3, -0): vcount 530 ecount 174 directed 1 simple 0 multi 1 c 0.7
+graph 326 (+2, -0): vcount 530 ecount 176 directed 1 simple 0 multi 1 c 0.7
+graph 327 (+10, -0): vcount 530 ecount 186 directed 1 simple 0 multi 1 c 0.7
+graph 328 (+5, -0): vcount 530 ecount 191 directed 1 simple 0 multi 1 c 0.7
++++ gap in edge timestamp, ignoring
+graph 330 (+2, -0): vcount 530 ecount 193 directed 1 simple 0 multi 1 c 0.7
+graph 331 (+2, -0): vcount 530 ecount 195 directed 1 simple 0 multi 1 c 0.7
+graph 332 (+1, -0): vcount 530 ecount 196 directed 1 simple 0 multi 1 c 0.7
++++ gap in edge timestamp, ignoring
+graph 340 (+5, -0): vcount 530 ecount 201 directed 1 simple 0 multi 1 c 0.8
+graph 341 (+3, -0): vcount 530 ecount 204 directed 1 simple 0 multi 1 c 0.8
++++ gap in edge timestamp, ignoring
+graph 343 (+2, -0): vcount 530 ecount 206 directed 1 simple 0 multi 1 c 0.8
+graph 344 (+4, -0): vcount 530 ecount 210 directed 1 simple 0 multi 1 c 0.8
+graph 345 (+5, -0): vcount 530 ecount 215 directed 1 simple 0 multi 1 c 0.8
+graph 346 (+4, -0): vcount 530 ecount 219 directed 1 simple 0 multi 1 c 0.8
+graph 347 (+5, -0): vcount 530 ecount 224 directed 1 simple 0 multi 1 c 0.8
+graph 348 (+2, -0): vcount 530 ecount 226 directed 1 simple 0 multi 1 c 0.9
+graph 349 (+7, -0): vcount 530 ecount 233 directed 1 simple 0 multi 1 c 0.9
+graph 350 (+6, -0): vcount 530 ecount 239 directed 1 simple 0 multi 1 c 0.9
+graph 351 (+2, -0): vcount 530 ecount 241 directed 1 simple 0 multi 1 c 0.9
+graph 352 (+2, -0): vcount 530 ecount 243 directed 1 simple 0 multi 1 c 0.9
+graph 353 (+2, -0): vcount 530 ecount 245 directed 1 simple 0 multi 1 c 0.9
+graph 354 (+1, -0): vcount 530 ecount 246 directed 1 simple 0 multi 1 c 0.9
+graph 355 (+5, -0): vcount 530 ecount 251 directed 1 simple 0 multi 1 c 0.9
+graph 356 (+5, -0): vcount 530 ecount 256 directed 1 simple 0 multi 1 c 1.0
+graph 357 (+7, -0): vcount 530 ecount 263 directed 1 simple 0 multi 1 c 1.0
+graph 358 (+7, -0): vcount 530 ecount 270 directed 1 simple 0 multi 1 c 1.0
+graph 359 (+4, -0): vcount 530 ecount 274 directed 1 simple 0 multi 1 c 1.0
+graph 360 (+3, -0): vcount 530 ecount 277 directed 1 simple 0 multi 1 c 1.0
+graph 361 (+5, -0): vcount 530 ecount 282 directed 1 simple 0 multi 1 c 1.1
+graph 362 (+19, -0): vcount 530 ecount 301 directed 1 simple 0 multi 1 c 1.1
+graph 363 (+2, -0): vcount 530 ecount 303 directed 1 simple 0 multi 1 c 1.1
+graph 364 (+1, -0): vcount 530 ecount 304 directed 1 simple 0 multi 1 c 1.1
+graph 365 (+2, -0): vcount 530 ecount 306 directed 1 simple 0 multi 1 c 1.2
+graph 366 (+7, -0): vcount 530 ecount 313 directed 1 simple 0 multi 1 c 1.2
+graph 367 (+10, -0): vcount 530 ecount 323 directed 1 simple 0 multi 1 c 1.2
+graph 368 (+7, -0): vcount 530 ecount 330 directed 1 simple 0 multi 1 c 1.2
+graph 369 (+8, -0): vcount 530 ecount 338 directed 1 simple 0 multi 1 c 1.3
+graph 370 (+4, -0): vcount 530 ecount 342 directed 1 simple 0 multi 1 c 1.3
+graph 371 (+3, -0): vcount 530 ecount 345 directed 1 simple 0 multi 1 c 1.3
+graph 372 (+11, -0): vcount 530 ecount 356 directed 1 simple 0 multi 1 c 1.3
+graph 373 (+10, -0): vcount 530 ecount 366 directed 1 simple 0 multi 1 c 1.4
+graph 374 (+5, -0): vcount 530 ecount 371 directed 1 simple 0 multi 1 c 1.4
+graph 375 (+12, -0): vcount 530 ecount 383 directed 1 simple 0 multi 1 c 1.4
+graph 376 (+8, -0): vcount 530 ecount 391 directed 1 simple 0 multi 1 c 1.5
+graph 377 (+3, -0): vcount 530 ecount 394 directed 1 simple 0 multi 1 c 1.5
++++ gap in edge timestamp, ignoring
+graph 389 (+3, -0): vcount 530 ecount 397 directed 1 simple 0 multi 1 c 1.5
+graph 390 (+1, -0): vcount 530 ecount 398 directed 1 simple 0 multi 1 c 1.5
+graph 391 (+5, -0): vcount 530 ecount 403 directed 1 simple 0 multi 1 c 1.5
+graph 392 (+2, -0): vcount 530 ecount 405 directed 1 simple 0 multi 1 c 1.5
+graph 393 (+14, -0): vcount 530 ecount 419 directed 1 simple 0 multi 1 c 1.6
+graph 394 (+6, -0): vcount 530 ecount 425 directed 1 simple 0 multi 1 c 1.6
+graph 395 (+1, -0): vcount 530 ecount 426 directed 1 simple 0 multi 1 c 1.6
++++ gap in edge timestamp, ignoring
+graph 397 (+1, -0): vcount 530 ecount 427 directed 1 simple 0 multi 1 c 1.6
+graph 398 (+4, -0): vcount 530 ecount 431 directed 1 simple 0 multi 1 c 1.6
+graph 399 (+2, -0): vcount 530 ecount 433 directed 1 simple 0 multi 1 c 1.6
+graph 400 (+2, -0): vcount 530 ecount 435 directed 1 simple 0 multi 1 c 1.6
+graph 401 (+4, -0): vcount 530 ecount 439 directed 1 simple 0 multi 1 c 1.7
++++ gap in edge timestamp, ignoring
+graph 404 (+8, -0): vcount 530 ecount 447 directed 1 simple 0 multi 1 c 1.7
+graph 405 (+2, -0): vcount 530 ecount 449 directed 1 simple 0 multi 1 c 1.7
+graph 406 (+2, -0): vcount 530 ecount 451 directed 1 simple 0 multi 1 c 1.7
+graph 407 (+5, -0): vcount 530 ecount 456 directed 1 simple 0 multi 1 c 1.7
++++ gap in edge timestamp, ignoring
+graph 409 (+2, -0): vcount 530 ecount 458 directed 1 simple 0 multi 1 c 1.7
+graph 410 (+1, -0): vcount 530 ecount 459 directed 1 simple 0 multi 1 c 1.7
+graph 411 (+8, -0): vcount 530 ecount 467 directed 1 simple 0 multi 1 c 1.8
+graph 412 (+16, -0): vcount 530 ecount 483 directed 1 simple 0 multi 1 c 1.8
+graph 413 (+4, -0): vcount 530 ecount 487 directed 1 simple 0 multi 1 c 1.8
+graph 414 (+3, -0): vcount 530 ecount 490 directed 1 simple 0 multi 1 c 1.8
+graph 415 (+8, -0): vcount 530 ecount 498 directed 1 simple 0 multi 1 c 1.9
+graph 416 (+22, -0): vcount 530 ecount 520 directed 1 simple 0 multi 1 c 2.0
+graph 417 (+56, -0): vcount 530 ecount 576 directed 1 simple 0 multi 1 c 2.2
+graph 418 (+48, -0): vcount 530 ecount 624 directed 1 simple 0 multi 1 c 2.4
+graph 419 (+30, -0): vcount 530 ecount 654 directed 1 simple 0 multi 1 c 2.5
+graph 420 (+29, -0): vcount 530 ecount 683 directed 1 simple 0 multi 1 c 2.6
+graph 421 (+16, -0): vcount 530 ecount 699 directed 1 simple 0 multi 1 c 2.6
+graph 422 (+7, -0): vcount 530 ecount 706 directed 1 simple 0 multi 1 c 2.7
+graph 423 (+25, -0): vcount 530 ecount 731 directed 1 simple 0 multi 1 c 2.8
+graph 424 (+2, -0): vcount 530 ecount 733 directed 1 simple 0 multi 1 c 2.8
+graph 425 (+2, -0): vcount 530 ecount 735 directed 1 simple 0 multi 1 c 2.8
+graph 426 (+27, -0): vcount 530 ecount 762 directed 1 simple 0 multi 1 c 2.9
++++ gap in edge timestamp, ignoring
+graph 429 (+4, -0): vcount 530 ecount 766 directed 1 simple 0 multi 1 c 2.9
++++ gap in edge timestamp, ignoring
+graph 439 (+1, -0): vcount 530 ecount 767 directed 1 simple 0 multi 1 c 2.9
+graph 440 (+6, -0): vcount 530 ecount 773 directed 1 simple 0 multi 1 c 2.9
+graph 441 (+11, -0): vcount 530 ecount 784 directed 1 simple 0 multi 1 c 3.0
+graph 442 (+2, -0): vcount 530 ecount 786 directed 1 simple 0 multi 1 c 3.0
+graph 443 (+11, -0): vcount 530 ecount 797 directed 1 simple 0 multi 1 c 3.0
+graph 444 (+5, -0): vcount 530 ecount 802 directed 1 simple 0 multi 1 c 3.0
+graph 445 (+1, -0): vcount 530 ecount 803 directed 1 simple 0 multi 1 c 3.0
+graph 446 (+3, -0): vcount 530 ecount 806 directed 1 simple 0 multi 1 c 3.0
+graph 447 (+5, -0): vcount 530 ecount 811 directed 1 simple 0 multi 1 c 3.1
+graph 448 (+19, -0): vcount 530 ecount 830 directed 1 simple 0 multi 1 c 3.1
+graph 449 (+11, -0): vcount 530 ecount 841 directed 1 simple 0 multi 1 c 3.2
+graph 450 (+14, -0): vcount 530 ecount 855 directed 1 simple 0 multi 1 c 3.2
+graph 451 (+22, -0): vcount 530 ecount 877 directed 1 simple 0 multi 1 c 3.3
+graph 452 (+9, -0): vcount 530 ecount 886 directed 1 simple 0 multi 1 c 3.3
+graph 453 (+6, -0): vcount 530 ecount 892 directed 1 simple 0 multi 1 c 3.4
+graph 454 (+13, -0): vcount 530 ecount 905 directed 1 simple 0 multi 1 c 3.4
+graph 455 (+12, -0): vcount 530 ecount 917 directed 1 simple 0 multi 1 c 3.5
+graph 456 (+6, -0): vcount 530 ecount 923 directed 1 simple 0 multi 1 c 3.5
+graph 457 (+4, -0): vcount 530 ecount 927 directed 1 simple 0 multi 1 c 3.5
+graph 458 (+9, -0): vcount 530 ecount 936 directed 1 simple 0 multi 1 c 3.5
+graph 459 (+8, -0): vcount 530 ecount 944 directed 1 simple 0 multi 1 c 3.6
+graph 460 (+4, -0): vcount 530 ecount 948 directed 1 simple 0 multi 1 c 3.6
+graph 461 (+4, -0): vcount 530 ecount 952 directed 1 simple 0 multi 1 c 3.6
+graph 462 (+3, -0): vcount 530 ecount 955 directed 1 simple 0 multi 1 c 3.6
+graph 463 (+5, -0): vcount 530 ecount 960 directed 1 simple 0 multi 1 c 3.6
+graph 464 (+4, -0): vcount 530 ecount 964 directed 1 simple 0 multi 1 c 3.6
+graph 465 (+2, -0): vcount 530 ecount 966 directed 1 simple 0 multi 1 c 3.6
+graph 466 (+2, -0): vcount 530 ecount 968 directed 1 simple 0 multi 1 c 3.7
+graph 467 (+11, -0): vcount 530 ecount 979 directed 1 simple 0 multi 1 c 3.7
+graph 468 (+17, -0): vcount 530 ecount 996 directed 1 simple 0 multi 1 c 3.8
+graph 469 (+43, -0): vcount 530 ecount 1039 directed 1 simple 0 multi 1 c 3.9
+graph 470 (+42, -0): vcount 530 ecount 1081 directed 1 simple 0 multi 1 c 4.1
+graph 471 (+45, -0): vcount 530 ecount 1126 directed 1 simple 0 multi 1 c 4.2
+graph 472 (+17, -0): vcount 530 ecount 1143 directed 1 simple 0 multi 1 c 4.3
+graph 473 (+8, -0): vcount 530 ecount 1151 directed 1 simple 0 multi 1 c 4.3
+graph 474 (+2, -0): vcount 530 ecount 1153 directed 1 simple 0 multi 1 c 4.4
+graph 475 (+1, -0): vcount 530 ecount 1154 directed 1 simple 0 multi 1 c 4.4
+graph 476 (+4, -0): vcount 530 ecount 1158 directed 1 simple 0 multi 1 c 4.4
++++ gap in edge timestamp, ignoring
+graph 486 (+2, -0): vcount 530 ecount 1160 directed 1 simple 0 multi 1 c 4.4
++++ gap in edge timestamp, ignoring
+graph 488 (+1, -0): vcount 530 ecount 1161 directed 1 simple 0 multi 1 c 4.4
+graph 489 (+2, -0): vcount 530 ecount 1163 directed 1 simple 0 multi 1 c 4.4
+graph 490 (+1, -0): vcount 530 ecount 1164 directed 1 simple 0 multi 1 c 4.4
+graph 491 (+3, -0): vcount 530 ecount 1167 directed 1 simple 0 multi 1 c 4.4
++++ gap in edge timestamp, ignoring
+graph 493 (+4, -0): vcount 530 ecount 1171 directed 1 simple 0 multi 1 c 4.4
++++ gap in edge timestamp, ignoring
+graph 495 (+4, -0): vcount 530 ecount 1175 directed 1 simple 0 multi 1 c 4.4
+graph 496 (+3, -0): vcount 530 ecount 1178 directed 1 simple 0 multi 1 c 4.4
+graph 497 (+7, -0): vcount 530 ecount 1185 directed 1 simple 0 multi 1 c 4.5
+graph 498 (+6, -0): vcount 530 ecount 1191 directed 1 simple 0 multi 1 c 4.5
+graph 499 (+10, -0): vcount 530 ecount 1201 directed 1 simple 0 multi 1 c 4.5
+graph 500 (+2, -0): vcount 530 ecount 1203 directed 1 simple 0 multi 1 c 4.5
+graph 501 (+4, -0): vcount 530 ecount 1207 directed 1 simple 0 multi 1 c 4.6
+graph 502 (+19, -0): vcount 530 ecount 1226 directed 1 simple 0 multi 1 c 4.6
+graph 503 (+2, -0): vcount 530 ecount 1228 directed 1 simple 0 multi 1 c 4.6
+graph 504 (+2, -0): vcount 530 ecount 1230 directed 1 simple 0 multi 1 c 4.6
+graph 505 (+11, -0): vcount 530 ecount 1241 directed 1 simple 0 multi 1 c 4.7
+graph 506 (+6, -0): vcount 530 ecount 1247 directed 1 simple 0 multi 1 c 4.7
+graph 507 (+1, -0): vcount 530 ecount 1248 directed 1 simple 0 multi 1 c 4.7
+graph 508 (+6, -0): vcount 530 ecount 1254 directed 1 simple 0 multi 1 c 4.7
+graph 509 (+22, -0): vcount 530 ecount 1276 directed 1 simple 0 multi 1 c 4.8
+graph 510 (+19, -0): vcount 530 ecount 1295 directed 1 simple 0 multi 1 c 4.9
+graph 511 (+37, -0): vcount 530 ecount 1332 directed 1 simple 0 multi 1 c 5.0
+graph 512 (+21, -0): vcount 530 ecount 1353 directed 1 simple 0 multi 1 c 5.1
+graph 513 (+11, -0): vcount 530 ecount 1364 directed 1 simple 0 multi 1 c 5.1
+graph 514 (+19, -0): vcount 530 ecount 1383 directed 1 simple 0 multi 1 c 5.2
+graph 515 (+15, -0): vcount 530 ecount 1398 directed 1 simple 0 multi 1 c 5.3
+graph 516 (+16, -0): vcount 530 ecount 1414 directed 1 simple 0 multi 1 c 5.3
+graph 517 (+14, -0): vcount 530 ecount 1428 directed 1 simple 0 multi 1 c 5.4
+graph 518 (+23, -0): vcount 530 ecount 1451 directed 1 simple 0 multi 1 c 5.5
+graph 519 (+3, -0): vcount 530 ecount 1454 directed 1 simple 0 multi 1 c 5.5
+graph 520 (+3, -0): vcount 530 ecount 1457 directed 1 simple 0 multi 1 c 5.5
+graph 521 (+5, -0): vcount 530 ecount 1462 directed 1 simple 0 multi 1 c 5.5
+graph 522 (+1, -0): vcount 530 ecount 1463 directed 1 simple 0 multi 1 c 5.5
++++ gap in edge timestamp, ignoring
+graph 524 (+1, -0): vcount 530 ecount 1464 directed 1 simple 0 multi 1 c 5.5
++++ gap in edge timestamp, ignoring
+graph 527 (+1, -0): vcount 530 ecount 1465 directed 1 simple 0 multi 1 c 5.5
++++ gap in edge timestamp, ignoring
+graph 531 (+1, -0): vcount 530 ecount 1466 directed 1 simple 0 multi 1 c 5.5
+graph 532 (+1, -0): vcount 530 ecount 1467 directed 1 simple 0 multi 1 c 5.5
++++ gap in edge timestamp, ignoring
+graph 534 (+11, -0): vcount 530 ecount 1478 directed 1 simple 0 multi 1 c 5.6
+graph 535 (+2, -0): vcount 530 ecount 1480 directed 1 simple 0 multi 1 c 5.6
+graph 536 (+4, -0): vcount 530 ecount 1484 directed 1 simple 0 multi 1 c 5.6
+graph 537 (+2, -0): vcount 530 ecount 1486 directed 1 simple 0 multi 1 c 5.6
+graph 538 (+5, -0): vcount 530 ecount 1491 directed 1 simple 0 multi 1 c 5.6
+graph 539 (+1, -0): vcount 530 ecount 1492 directed 1 simple 0 multi 1 c 5.6
+graph 540 (+2, -0): vcount 530 ecount 1494 directed 1 simple 0 multi 1 c 5.6
+graph 541 (+3, -0): vcount 530 ecount 1497 directed 1 simple 0 multi 1 c 5.6
+graph 542 (+12, -0): vcount 530 ecount 1509 directed 1 simple 0 multi 1 c 5.7
+graph 543 (+3, -0): vcount 530 ecount 1512 directed 1 simple 0 multi 1 c 5.7
+graph 544 (+3, -0): vcount 530 ecount 1515 directed 1 simple 0 multi 1 c 5.7
+graph 545 (+5, -0): vcount 530 ecount 1520 directed 1 simple 0 multi 1 c 5.7
+graph 546 (+4, -0): vcount 530 ecount 1524 directed 1 simple 0 multi 1 c 5.8
+graph 547 (+7, -0): vcount 530 ecount 1531 directed 1 simple 0 multi 1 c 5.8
+graph 548 (+2, -0): vcount 530 ecount 1533 directed 1 simple 0 multi 1 c 5.8
+graph 549 (+15, -0): vcount 530 ecount 1548 directed 1 simple 0 multi 1 c 5.8
+graph 550 (+12, -0): vcount 530 ecount 1560 directed 1 simple 0 multi 1 c 5.9
+graph 551 (+5, -0): vcount 530 ecount 1565 directed 1 simple 0 multi 1 c 5.9
+graph 552 (+10, -0): vcount 530 ecount 1575 directed 1 simple 0 multi 1 c 5.9
+graph 553 (+7, -0): vcount 530 ecount 1582 directed 1 simple 0 multi 1 c 6.0
+graph 554 (+12, -0): vcount 530 ecount 1594 directed 1 simple 0 multi 1 c 6.0
+graph 555 (+16, -0): vcount 530 ecount 1610 directed 1 simple 0 multi 1 c 6.1
+graph 556 (+27, -0): vcount 530 ecount 1637 directed 1 simple 0 multi 1 c 6.2
+graph 557 (+14, -0): vcount 530 ecount 1651 directed 1 simple 0 multi 1 c 6.2
+graph 558 (+24, -0): vcount 530 ecount 1675 directed 1 simple 0 multi 1 c 6.3
+graph 559 (+31, -0): vcount 530 ecount 1706 directed 1 simple 0 multi 1 c 6.4
+graph 560 (+50, -0): vcount 530 ecount 1756 directed 1 simple 0 multi 1 c 6.6
+graph 561 (+43, -0): vcount 530 ecount 1799 directed 1 simple 0 multi 1 c 6.8
+graph 562 (+40, -0): vcount 530 ecount 1839 directed 1 simple 0 multi 1 c 6.9
+graph 563 (+39, -0): vcount 530 ecount 1878 directed 1 simple 0 multi 1 c 7.1
+graph 564 (+60, -0): vcount 530 ecount 1938 directed 1 simple 0 multi 1 c 7.3
+graph 565 (+53, -0): vcount 530 ecount 1991 directed 1 simple 0 multi 1 c 7.5
+graph 566 (+89, -0): vcount 530 ecount 2080 directed 1 simple 0 multi 1 c 7.8
+graph 567 (+39, -0): vcount 530 ecount 2119 directed 1 simple 0 multi 1 c 8.0
+graph 568 (+46, -0): vcount 530 ecount 2165 directed 1 simple 0 multi 1 c 8.2
+graph 569 (+13, -0): vcount 530 ecount 2178 directed 1 simple 0 multi 1 c 8.2
+graph 570 (+6, -0): vcount 530 ecount 2184 directed 1 simple 0 multi 1 c 8.2
++++ gap in edge timestamp, ignoring
+graph 578 (+3, -0): vcount 530 ecount 2187 directed 1 simple 0 multi 1 c 8.3
+graph 579 (+1, -0): vcount 530 ecount 2188 directed 1 simple 0 multi 1 c 8.3
++++ gap in edge timestamp, ignoring
+graph 581 (+2, -0): vcount 530 ecount 2190 directed 1 simple 0 multi 1 c 8.3
++++ gap in edge timestamp, ignoring
+graph 583 (+5, -0): vcount 530 ecount 2195 directed 1 simple 0 multi 1 c 8.3
+graph 584 (+7, -0): vcount 530 ecount 2202 directed 1 simple 0 multi 1 c 8.3
+graph 585 (+6, -0): vcount 530 ecount 2208 directed 1 simple 0 multi 1 c 8.3
+graph 586 (+3, -0): vcount 530 ecount 2211 directed 1 simple 0 multi 1 c 8.3
+graph 587 (+1, -0): vcount 530 ecount 2212 directed 1 simple 0 multi 1 c 8.3
+graph 588 (+3, -0): vcount 530 ecount 2215 directed 1 simple 0 multi 1 c 8.4
+graph 589 (+5, -0): vcount 530 ecount 2220 directed 1 simple 0 multi 1 c 8.4
+graph 590 (+15, -0): vcount 530 ecount 2235 directed 1 simple 0 multi 1 c 8.4
+graph 591 (+34, -0): vcount 530 ecount 2269 directed 1 simple 0 multi 1 c 8.6
+graph 592 (+19, -0): vcount 530 ecount 2288 directed 1 simple 0 multi 1 c 8.6
+graph 593 (+35, -0): vcount 530 ecount 2323 directed 1 simple 0 multi 1 c 8.8
+graph 594 (+28, -0): vcount 530 ecount 2351 directed 1 simple 0 multi 1 c 8.9
+graph 595 (+12, -0): vcount 530 ecount 2363 directed 1 simple 0 multi 1 c 8.9
+graph 596 (+8, -0): vcount 530 ecount 2371 directed 1 simple 0 multi 1 c 8.9
+graph 597 (+9, -0): vcount 530 ecount 2380 directed 1 simple 0 multi 1 c 9.0
+graph 598 (+7, -0): vcount 530 ecount 2387 directed 1 simple 0 multi 1 c 9.0
+graph 599 (+8, -0): vcount 530 ecount 2395 directed 1 simple 0 multi 1 c 9.0
+graph 600 (+7, -0): vcount 530 ecount 2402 directed 1 simple 0 multi 1 c 9.1
+graph 601 (+25, -0): vcount 530 ecount 2427 directed 1 simple 0 multi 1 c 9.2
+graph 602 (+14, -0): vcount 530 ecount 2441 directed 1 simple 0 multi 1 c 9.2
+graph 603 (+2, -0): vcount 530 ecount 2443 directed 1 simple 0 multi 1 c 9.2
+graph 604 (+5, -0): vcount 530 ecount 2448 directed 1 simple 0 multi 1 c 9.2
+graph 605 (+7, -0): vcount 530 ecount 2455 directed 1 simple 0 multi 1 c 9.3
+graph 606 (+10, -0): vcount 530 ecount 2465 directed 1 simple 0 multi 1 c 9.3
+graph 607 (+14, -0): vcount 530 ecount 2479 directed 1 simple 0 multi 1 c 9.4
+graph 608 (+35, -0): vcount 530 ecount 2514 directed 1 simple 0 multi 1 c 9.5
+graph 609 (+47, -0): vcount 530 ecount 2561 directed 1 simple 0 multi 1 c 9.7
+graph 610 (+56, -0): vcount 530 ecount 2617 directed 1 simple 0 multi 1 c 9.9
+graph 611 (+44, -0): vcount 530 ecount 2661 directed 1 simple 0 multi 1 c 10.0
+graph 612 (+38, -0): vcount 530 ecount 2699 directed 1 simple 0 multi 1 c 10.2
+graph 613 (+37, -0): vcount 530 ecount 2736 directed 1 simple 0 multi 1 c 10.3
+graph 614 (+33, -0): vcount 530 ecount 2769 directed 1 simple 0 multi 1 c 10.4
+graph 615 (+32, -0): vcount 530 ecount 2801 directed 1 simple 0 multi 1 c 10.6
+graph 616 (+29, -0): vcount 530 ecount 2830 directed 1 simple 0 multi 1 c 10.7
+graph 617 (+18, -0): vcount 530 ecount 2848 directed 1 simple 0 multi 1 c 10.7
+graph 618 (+1, -0): vcount 530 ecount 2849 directed 1 simple 0 multi 1 c 10.8
+graph 619 (+1, -0): vcount 530 ecount 2850 directed 1 simple 0 multi 1 c 10.8
++++ gap in edge timestamp, ignoring
+graph 621 (+2, -0): vcount 530 ecount 2852 directed 1 simple 0 multi 1 c 10.8
+graph 622 (+2, -0): vcount 530 ecount 2854 directed 1 simple 0 multi 1 c 10.8
++++ gap in edge timestamp, ignoring
+graph 625 (+1, -0): vcount 530 ecount 2855 directed 1 simple 0 multi 1 c 10.8
+graph 626 (+1, -0): vcount 530 ecount 2856 directed 1 simple 0 multi 1 c 10.8
+graph 627 (+1, -0): vcount 530 ecount 2857 directed 1 simple 0 multi 1 c 10.8
+graph 628 (+4, -0): vcount 530 ecount 2861 directed 1 simple 0 multi 1 c 10.8
+graph 629 (+8, -0): vcount 530 ecount 2869 directed 1 simple 0 multi 1 c 10.8
+graph 630 (+3, -0): vcount 530 ecount 2872 directed 1 simple 0 multi 1 c 10.8
+graph 631 (+1, -0): vcount 530 ecount 2873 directed 1 simple 0 multi 1 c 10.8
+graph 632 (+4, -0): vcount 530 ecount 2877 directed 1 simple 0 multi 1 c 10.9
+graph 633 (+13, -0): vcount 530 ecount 2890 directed 1 simple 0 multi 1 c 10.9
+graph 634 (+3, -0): vcount 530 ecount 2893 directed 1 simple 0 multi 1 c 10.9
+graph 635 (+12, -0): vcount 530 ecount 2905 directed 1 simple 0 multi 1 c 11.0
+graph 636 (+6, -0): vcount 530 ecount 2911 directed 1 simple 0 multi 1 c 11.0
+graph 637 (+8, -0): vcount 530 ecount 2919 directed 1 simple 0 multi 1 c 11.0
+graph 638 (+14, -0): vcount 530 ecount 2933 directed 1 simple 0 multi 1 c 11.1
+graph 639 (+10, -0): vcount 530 ecount 2943 directed 1 simple 0 multi 1 c 11.1
+graph 640 (+8, -0): vcount 530 ecount 2951 directed 1 simple 0 multi 1 c 11.1
+graph 641 (+24, -0): vcount 530 ecount 2975 directed 1 simple 0 multi 1 c 11.2
+graph 642 (+30, -0): vcount 530 ecount 3005 directed 1 simple 0 multi 1 c 11.3
+graph 643 (+34, -0): vcount 530 ecount 3039 directed 1 simple 0 multi 1 c 11.5
+graph 644 (+18, -0): vcount 530 ecount 3057 directed 1 simple 0 multi 1 c 11.5
+graph 645 (+16, -0): vcount 530 ecount 3073 directed 1 simple 0 multi 1 c 11.6
+graph 646 (+9, -0): vcount 530 ecount 3082 directed 1 simple 0 multi 1 c 11.6
+graph 647 (+17, -0): vcount 530 ecount 3099 directed 1 simple 0 multi 1 c 11.7
+graph 648 (+11, -0): vcount 530 ecount 3110 directed 1 simple 0 multi 1 c 11.7
+graph 649 (+13, -0): vcount 530 ecount 3123 directed 1 simple 0 multi 1 c 11.8
+graph 650 (+28, -0): vcount 530 ecount 3151 directed 1 simple 0 multi 1 c 11.9
+graph 651 (+21, -0): vcount 530 ecount 3172 directed 1 simple 0 multi 1 c 12.0
+graph 652 (+31, -0): vcount 530 ecount 3203 directed 1 simple 0 multi 1 c 12.1
+graph 653 (+24, -0): vcount 530 ecount 3227 directed 1 simple 0 multi 1 c 12.2
+graph 654 (+22, -0): vcount 530 ecount 3249 directed 1 simple 0 multi 1 c 12.3
+graph 655 (+13, -0): vcount 530 ecount 3262 directed 1 simple 0 multi 1 c 12.3
+graph 656 (+34, -0): vcount 530 ecount 3296 directed 1 simple 0 multi 1 c 12.4
+graph 657 (+34, -0): vcount 530 ecount 3330 directed 1 simple 0 multi 1 c 12.6
+graph 658 (+49, -0): vcount 530 ecount 3379 directed 1 simple 0 multi 1 c 12.8
+graph 659 (+52, -0): vcount 530 ecount 3431 directed 1 simple 0 multi 1 c 12.9
+graph 660 (+59, -0): vcount 530 ecount 3490 directed 1 simple 0 multi 1 c 13.2
+graph 661 (+56, -0): vcount 530 ecount 3546 directed 1 simple 0 multi 1 c 13.4
+graph 662 (+58, -0): vcount 530 ecount 3604 directed 1 simple 0 multi 1 c 13.6
+graph 663 (+43, -0): vcount 530 ecount 3647 directed 1 simple 0 multi 1 c 13.8
+graph 664 (+33, -0): vcount 530 ecount 3680 directed 1 simple 0 multi 1 c 13.9
+graph 665 (+13, -0): vcount 530 ecount 3693 directed 1 simple 0 multi 1 c 13.9
+graph 666 (+7, -0): vcount 530 ecount 3700 directed 1 simple 0 multi 1 c 14.0
+graph 667 (+2, -0): vcount 530 ecount 3702 directed 1 simple 0 multi 1 c 14.0
+graph 668 (+1, -0): vcount 530 ecount 3703 directed 1 simple 0 multi 1 c 14.0
+graph 669 (+2, -0): vcount 530 ecount 3705 directed 1 simple 0 multi 1 c 14.0
++++ gap in edge timestamp, ignoring
+graph 675 (+1, -0): vcount 530 ecount 3706 directed 1 simple 0 multi 1 c 14.0
+graph 676 (+2, -0): vcount 530 ecount 3708 directed 1 simple 0 multi 1 c 14.0
+graph 677 (+6, -0): vcount 530 ecount 3714 directed 1 simple 0 multi 1 c 14.0
+graph 678 (+3, -0): vcount 530 ecount 3717 directed 1 simple 0 multi 1 c 14.0
+graph 679 (+17, -0): vcount 530 ecount 3734 directed 1 simple 0 multi 1 c 14.1
+graph 680 (+23, -0): vcount 530 ecount 3757 directed 1 simple 0 multi 1 c 14.2
+graph 681 (+9, -0): vcount 530 ecount 3766 directed 1 simple 0 multi 1 c 14.2
+graph 682 (+6, -0): vcount 530 ecount 3772 directed 1 simple 0 multi 1 c 14.2
+graph 683 (+4, -0): vcount 530 ecount 3776 directed 1 simple 0 multi 1 c 14.2
+graph 684 (+5, -0): vcount 530 ecount 3781 directed 1 simple 0 multi 1 c 14.3
+graph 685 (+6, -0): vcount 530 ecount 3787 directed 1 simple 0 multi 1 c 14.3
+graph 686 (+10, -0): vcount 530 ecount 3797 directed 1 simple 0 multi 1 c 14.3
+graph 687 (+18, -0): vcount 530 ecount 3815 directed 1 simple 0 multi 1 c 14.4
+graph 688 (+11, -0): vcount 530 ecount 3826 directed 1 simple 0 multi 1 c 14.4
+graph 689 (+6, -0): vcount 530 ecount 3832 directed 1 simple 0 multi 1 c 14.5
+graph 690 (+3, -0): vcount 530 ecount 3835 directed 1 simple 0 multi 1 c 14.5
+graph 691 (+6, -0): vcount 530 ecount 3841 directed 1 simple 0 multi 1 c 14.5
+graph 692 (+14, -0): vcount 530 ecount 3855 directed 1 simple 0 multi 1 c 14.5
+graph 693 (+18, -0): vcount 530 ecount 3873 directed 1 simple 0 multi 1 c 14.6
+graph 694 (+19, -0): vcount 530 ecount 3892 directed 1 simple 0 multi 1 c 14.7
+graph 695 (+26, -0): vcount 530 ecount 3918 directed 1 simple 0 multi 1 c 14.8
+graph 696 (+45, -0): vcount 530 ecount 3963 directed 1 simple 0 multi 1 c 15.0
+graph 697 (+19, -0): vcount 530 ecount 3982 directed 1 simple 0 multi 1 c 15.0
+graph 698 (+16, -0): vcount 530 ecount 3998 directed 1 simple 0 multi 1 c 15.1
+graph 699 (+27, -0): vcount 530 ecount 4025 directed 1 simple 0 multi 1 c 15.2
+graph 700 (+26, -0): vcount 530 ecount 4051 directed 1 simple 0 multi 1 c 15.3
+graph 701 (+19, -0): vcount 530 ecount 4070 directed 1 simple 0 multi 1 c 15.4
+graph 702 (+28, -0): vcount 530 ecount 4098 directed 1 simple 0 multi 1 c 15.5
+graph 703 (+25, -0): vcount 530 ecount 4123 directed 1 simple 0 multi 1 c 15.6
+graph 704 (+41, -0): vcount 530 ecount 4164 directed 1 simple 0 multi 1 c 15.7
+graph 705 (+41, -0): vcount 530 ecount 4205 directed 1 simple 0 multi 1 c 15.9
+graph 706 (+60, -0): vcount 530 ecount 4265 directed 1 simple 0 multi 1 c 16.1
+graph 707 (+97, -0): vcount 530 ecount 4362 directed 1 simple 0 multi 1 c 16.5
+graph 708 (+67, -0): vcount 530 ecount 4429 directed 1 simple 0 multi 1 c 16.7
+graph 709 (+54, -0): vcount 530 ecount 4483 directed 1 simple 0 multi 1 c 16.9
+graph 710 (+35, -0): vcount 530 ecount 4518 directed 1 simple 0 multi 1 c 17.0
+graph 711 (+63, -0): vcount 530 ecount 4581 directed 1 simple 0 multi 1 c 17.3
+graph 712 (+50, -0): vcount 530 ecount 4631 directed 1 simple 0 multi 1 c 17.5
+graph 713 (+63, -0): vcount 530 ecount 4694 directed 1 simple 0 multi 1 c 17.7
+graph 714 (+8, -0): vcount 530 ecount 4702 directed 1 simple 0 multi 1 c 17.7
+graph 715 (+8, -0): vcount 530 ecount 4710 directed 1 simple 0 multi 1 c 17.8
++++ gap in edge timestamp, ignoring
+graph 718 (+1, -0): vcount 530 ecount 4711 directed 1 simple 0 multi 1 c 17.8
++++ gap in edge timestamp, ignoring
+graph 720 (+1, -0): vcount 530 ecount 4712 directed 1 simple 0 multi 1 c 17.8
++++ gap in edge timestamp, ignoring
+graph 723 (+1, -0): vcount 530 ecount 4713 directed 1 simple 0 multi 1 c 17.8
+graph 724 (+5, -0): vcount 530 ecount 4718 directed 1 simple 0 multi 1 c 17.8
+graph 725 (+9, -0): vcount 530 ecount 4727 directed 1 simple 0 multi 1 c 17.8
+graph 726 (+8, -0): vcount 530 ecount 4735 directed 1 simple 0 multi 1 c 17.9
+graph 727 (+21, -0): vcount 530 ecount 4756 directed 1 simple 0 multi 1 c 17.9
+graph 728 (+11, -0): vcount 530 ecount 4767 directed 1 simple 0 multi 1 c 18.0
+graph 729 (+10, -0): vcount 530 ecount 4777 directed 1 simple 0 multi 1 c 18.0
+graph 730 (+15, -0): vcount 530 ecount 4792 directed 1 simple 0 multi 1 c 18.1
+graph 731 (+5, -0): vcount 530 ecount 4797 directed 1 simple 0 multi 1 c 18.1
+graph 732 (+28, -0): vcount 530 ecount 4825 directed 1 simple 0 multi 1 c 18.2
+graph 733 (+10, -0): vcount 530 ecount 4835 directed 1 simple 0 multi 1 c 18.2
+graph 734 (+22, -0): vcount 530 ecount 4857 directed 1 simple 0 multi 1 c 18.3
+graph 735 (+16, -0): vcount 530 ecount 4873 directed 1 simple 0 multi 1 c 18.4
+graph 736 (+36, -0): vcount 530 ecount 4909 directed 1 simple 0 multi 1 c 18.5
+graph 737 (+19, -0): vcount 530 ecount 4928 directed 1 simple 0 multi 1 c 18.6
+graph 738 (+11, -0): vcount 530 ecount 4939 directed 1 simple 0 multi 1 c 18.6
+graph 739 (+8, -0): vcount 530 ecount 4947 directed 1 simple 0 multi 1 c 18.7
+graph 740 (+7, -0): vcount 530 ecount 4954 directed 1 simple 0 multi 1 c 18.7
+graph 741 (+17, -0): vcount 530 ecount 4971 directed 1 simple 0 multi 1 c 18.8
+graph 742 (+10, -0): vcount 530 ecount 4981 directed 1 simple 0 multi 1 c 18.8
+graph 743 (+3, -0): vcount 530 ecount 4984 directed 1 simple 0 multi 1 c 18.8
+graph 744 (+8, -0): vcount 530 ecount 4992 directed 1 simple 0 multi 1 c 18.8
+graph 745 (+6, -0): vcount 530 ecount 4998 directed 1 simple 0 multi 1 c 18.9
+graph 746 (+2, -0): vcount 530 ecount 5000 directed 1 simple 0 multi 1 c 18.9
++++ ecolors 0 min 0 max 0
+Done. Took 0.167653 seconds.
+ug 0: vcount 530 ecount 2 directed 1 simple 1 multi 0 c 0.0
+    ecolors [1, 3]
+ug 1: vcount 530 ecount 3 directed 1 simple 1 multi 0 c 0.0
+    ecolors [1, 3]
+ug 2: vcount 530 ecount 7 directed 1 simple 1 multi 0 c 0.0
+    ecolors [1, 3]
+ug 3: vcount 530 ecount 13 directed 1 simple 0 multi 1 c 0.0
+    ecolors [1, 3]
+ug 4: vcount 530 ecount 15 directed 1 simple 0 multi 1 c 0.1
+    ecolors [1, 3]
+ug 5: vcount 530 ecount 16 directed 1 simple 0 multi 1 c 0.1
+    ecolors [1, 3]
+ug 6: vcount 530 ecount 20 directed 1 simple 0 multi 1 c 0.1
+    ecolors [1, 3]
+ug 7: vcount 530 ecount 21 directed 1 simple 0 multi 1 c 0.1
+    ecolors [1, 3]
+ug 8: vcount 530 ecount 22 directed 1 simple 0 multi 1 c 0.1
+    ecolors [1, 3]
+ug 9: vcount 530 ecount 23 directed 1 simple 0 multi 1 c 0.1
+    ecolors [1, 3]
+... and 377 more.
+Avg. number of nodes: 530.000000 (+-0.000000)
+Avg. number of edges: 1855.795866 (+-1514.657227)
+
+Mining...
+edge color frequencies: 0 4999 0 713194
+GSPAN frequent ecolors: 1 3 -1 -1 -1
+GSPAN frequent vcolors: -1
+(0,1,>,0,1,0,0) 
+   supp: 2257
+(0,1,>,0,1,0,0) (0,2,>,0,1,0,0) 
+   supp: 683
+(0,1,>,0,1,0,0) (0,2,>,0,1,0,0) (0,3,>,0,1,0,0) 
+   supp: 226
+(0,1,>,0,1,0,0) (0,2,>,0,1,0,0) (0,3,>,0,3,0,0) 
+   supp: 600
+(0,1,>,0,1,0,0) (0,2,>,0,1,0,0) (0,3,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (0,2,>,0,1,0,0) (0,3,<,0,3,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (0,2,>,0,1,0,0) (2,0,>,0,1,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (0,2,>,0,1,0,0) (2,0,>,0,3,0,0) 
+   supp: 145
+(0,1,>,0,1,0,0) (0,2,>,0,1,0,0) (2,3,>,0,1,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (0,2,>,0,1,0,0) (2,3,>,0,3,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (0,2,>,0,1,0,0) (2,3,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (0,2,>,0,1,0,0) (2,3,<,0,3,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (0,2,>,0,3,0,0) 
+   supp: 1877
+(0,1,>,0,1,0,0) (0,2,>,0,3,0,0) (0,3,>,0,1,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (0,2,>,0,3,0,0) (0,3,>,0,3,0,0) 
+   supp: 1622
+(0,1,>,0,1,0,0) (0,2,>,0,3,0,0) (0,3,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (0,2,>,0,3,0,0) (0,3,<,0,3,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (0,2,>,0,3,0,0) (2,0,>,0,1,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (0,2,>,0,3,0,0) (2,0,>,0,3,0,0) 
+   supp: 852
+(0,1,>,0,1,0,0) (0,2,>,0,3,0,0) (2,3,>,0,1,0,0) 
+   supp: 463
+(0,1,>,0,1,0,0) (0,2,>,0,3,0,0) (2,3,>,0,3,0,0) 
+   supp: 1764
+(0,1,>,0,1,0,0) (0,2,>,0,3,0,0) (2,3,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (0,2,>,0,3,0,0) (2,3,<,0,3,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (0,2,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (0,2,<,0,3,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (1,0,>,0,1,0,0) 
+   supp: 468
+(0,1,>,0,1,0,0) (1,0,>,0,1,0,0) (0,2,>,0,1,0,0) 
+   supp: 153
+(0,1,>,0,1,0,0) (1,0,>,0,1,0,0) (0,2,>,0,3,0,0) 
+   supp: 369
+(0,1,>,0,1,0,0) (1,0,>,0,1,0,0) (0,2,<,0,1,0,0) 
+   supp: 207
+(0,1,>,0,1,0,0) (1,0,>,0,1,0,0) (0,2,<,0,3,0,0) 
+   supp: 385
+(0,1,>,0,1,0,0) (1,0,>,0,1,0,0) (1,2,>,0,1,0,0) 
+   supp: 153
+(0,1,>,0,1,0,0) (1,0,>,0,1,0,0) (1,2,>,0,3,0,0) 
+   supp: 369
+(0,1,>,0,1,0,0) (1,0,>,0,1,0,0) (1,2,<,0,1,0,0) 
+   supp: 207
+(0,1,>,0,1,0,0) (1,0,>,0,1,0,0) (1,2,<,0,3,0,0) 
+   supp: 385
+(0,1,>,0,1,0,0) (1,0,>,0,3,0,0) 
+   supp: 439
+(0,1,>,0,1,0,0) (1,0,>,0,3,0,0) (0,2,>,0,1,0,0) 
+   supp: 145
+(0,1,>,0,1,0,0) (1,0,>,0,3,0,0) (0,2,>,0,3,0,0) 
+   supp: 365
+(0,1,>,0,1,0,0) (1,0,>,0,3,0,0) (0,2,<,0,1,0,0) 
+   supp: 109
+(0,1,>,0,1,0,0) (1,0,>,0,3,0,0) (0,2,<,0,3,0,0) 
+   supp: 388
+(0,1,>,0,1,0,0) (1,0,>,0,3,0,0) (1,2,>,0,1,0,0) 
+   supp: 47
+(0,1,>,0,1,0,0) (1,0,>,0,3,0,0) (1,2,>,0,3,0,0) 
+   supp: 390
+(0,1,>,0,1,0,0) (1,0,>,0,3,0,0) (1,2,<,0,1,0,0) 
+   supp: 94
+(0,1,>,0,1,0,0) (1,0,>,0,3,0,0) (1,2,<,0,3,0,0) 
+   supp: 397
+(0,1,>,0,1,0,0) (1,2,>,0,1,0,0) 
+   supp: 429
+(0,1,>,0,1,0,0) (1,2,>,0,1,0,0) (0,3,>,0,1,0,0) 
+   supp: 251
+(0,1,>,0,1,0,0) (1,2,>,0,1,0,0) (0,3,>,0,3,0,0) 
+   supp: 389
+(0,1,>,0,1,0,0) (1,2,>,0,1,0,0) (0,3,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (1,2,>,0,1,0,0) (0,3,<,0,3,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (1,2,>,0,1,0,0) (2,0,>,0,1,0,0) 
+   supp: 12
+(0,1,>,0,1,0,0) (1,2,>,0,1,0,0) (2,0,>,0,3,0,0) 
+   supp: 22
+(0,1,>,0,1,0,0) (1,2,>,0,1,0,0) (2,0,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (1,2,>,0,1,0,0) (2,0,<,0,3,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (1,2,>,0,1,0,0) (1,3,>,0,1,0,0) 
+   supp: 123
+(0,1,>,0,1,0,0) (1,2,>,0,1,0,0) (1,3,>,0,3,0,0) 
+   supp: 347
+(0,1,>,0,1,0,0) (1,2,>,0,1,0,0) (1,3,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (1,2,>,0,1,0,0) (1,3,<,0,3,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (1,2,>,0,1,0,0) (2,1,>,0,1,0,0) 
+   supp: 207
+(0,1,>,0,1,0,0) (1,2,>,0,1,0,0) (2,1,>,0,3,0,0) 
+   supp: 109
+(0,1,>,0,1,0,0) (1,2,>,0,1,0,0) (2,3,>,0,1,0,0) 
+   supp: 134
+(0,1,>,0,1,0,0) (1,2,>,0,1,0,0) (2,3,>,0,3,0,0) 
+   supp: 342
+(0,1,>,0,1,0,0) (1,2,>,0,1,0,0) (2,3,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (1,2,>,0,1,0,0) (2,3,<,0,3,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (1,2,>,0,3,0,0) 
+   supp: 1711
+(0,1,>,0,1,0,0) (1,2,>,0,3,0,0) (0,3,>,0,1,0,0) 
+   supp: 612
+(0,1,>,0,1,0,0) (1,2,>,0,3,0,0) (0,3,>,0,3,0,0) 
+   supp: 1456
+(0,1,>,0,1,0,0) (1,2,>,0,3,0,0) (0,3,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (1,2,>,0,3,0,0) (0,3,<,0,3,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (1,2,>,0,3,0,0) (2,0,>,0,1,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (1,2,>,0,3,0,0) (2,0,>,0,3,0,0) 
+   supp: 199
+(0,1,>,0,1,0,0) (1,2,>,0,3,0,0) (2,0,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (1,2,>,0,3,0,0) (2,0,<,0,3,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (1,2,>,0,3,0,0) (1,3,>,0,1,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (1,2,>,0,3,0,0) (1,3,>,0,3,0,0) 
+   supp: 1397
+(0,1,>,0,1,0,0) (1,2,>,0,3,0,0) (1,3,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (1,2,>,0,3,0,0) (1,3,<,0,3,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (1,2,>,0,3,0,0) (2,1,>,0,1,0,0) 
+   supp: 94
+(0,1,>,0,1,0,0) (1,2,>,0,3,0,0) (2,1,>,0,3,0,0) 
+   supp: 1463
+(0,1,>,0,1,0,0) (1,2,>,0,3,0,0) (2,3,>,0,1,0,0) 
+   supp: 359
+(0,1,>,0,1,0,0) (1,2,>,0,3,0,0) (2,3,>,0,3,0,0) 
+   supp: 1609
+(0,1,>,0,1,0,0) (1,2,>,0,3,0,0) (2,3,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (1,2,>,0,3,0,0) (2,3,<,0,3,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (1,2,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,1,0,0) (1,2,<,0,3,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) 
+   supp: 60533
+(0,1,>,0,3,0,0) (0,2,>,0,1,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (0,2,>,0,3,0,0) 
+   supp: 37563
+(0,1,>,0,3,0,0) (0,2,>,0,3,0,0) (0,3,>,0,1,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (0,2,>,0,3,0,0) (0,3,>,0,3,0,0) 
+   supp: 27238
+(0,1,>,0,3,0,0) (0,2,>,0,3,0,0) (0,3,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (0,2,>,0,3,0,0) (0,3,<,0,3,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (0,2,>,0,3,0,0) (2,0,>,0,1,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (0,2,>,0,3,0,0) (2,0,>,0,3,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (0,2,>,0,3,0,0) (2,3,>,0,1,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (0,2,>,0,3,0,0) (2,3,>,0,3,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (0,2,>,0,3,0,0) (2,3,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (0,2,>,0,3,0,0) (2,3,<,0,3,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (0,2,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (0,2,<,0,3,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (1,0,>,0,1,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (1,0,>,0,3,0,0) 
+   supp: 33506
+(0,1,>,0,3,0,0) (1,0,>,0,3,0,0) (0,2,>,0,1,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (1,0,>,0,3,0,0) (0,2,>,0,3,0,0) 
+   supp: 23278
+(0,1,>,0,3,0,0) (1,0,>,0,3,0,0) (0,2,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (1,0,>,0,3,0,0) (0,2,<,0,3,0,0) 
+   supp: 29387
+(0,1,>,0,3,0,0) (1,0,>,0,3,0,0) (1,2,>,0,1,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (1,0,>,0,3,0,0) (1,2,>,0,3,0,0) 
+   supp: 23278
+(0,1,>,0,3,0,0) (1,0,>,0,3,0,0) (1,2,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (1,0,>,0,3,0,0) (1,2,<,0,3,0,0) 
+   supp: 29387
+(0,1,>,0,3,0,0) (1,2,>,0,1,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (1,2,>,0,3,0,0) 
+   supp: 39426
+(0,1,>,0,3,0,0) (1,2,>,0,3,0,0) (0,3,>,0,1,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (1,2,>,0,3,0,0) (0,3,>,0,3,0,0) 
+   supp: 35867
+(0,1,>,0,3,0,0) (1,2,>,0,3,0,0) (0,3,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (1,2,>,0,3,0,0) (0,3,<,0,3,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (1,2,>,0,3,0,0) (2,0,>,0,1,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (1,2,>,0,3,0,0) (2,0,>,0,3,0,0) 
+   supp: 9497
+(0,1,>,0,3,0,0) (1,2,>,0,3,0,0) (2,0,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (1,2,>,0,3,0,0) (2,0,<,0,3,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (1,2,>,0,3,0,0) (1,3,>,0,1,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (1,2,>,0,3,0,0) (1,3,>,0,3,0,0) 
+   supp: 24323
+(0,1,>,0,3,0,0) (1,2,>,0,3,0,0) (1,3,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (1,2,>,0,3,0,0) (1,3,<,0,3,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (1,2,>,0,3,0,0) (2,1,>,0,1,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (1,2,>,0,3,0,0) (2,1,>,0,3,0,0) 
+   supp: 29387
+(0,1,>,0,3,0,0) (1,2,>,0,3,0,0) (2,3,>,0,1,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (1,2,>,0,3,0,0) (2,3,>,0,3,0,0) 
+   supp: 31492
+(0,1,>,0,3,0,0) (1,2,>,0,3,0,0) (2,3,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (1,2,>,0,3,0,0) (2,3,<,0,3,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (1,2,<,0,1,0,0) 
+   not canonical
+(0,1,>,0,3,0,0) (1,2,<,0,3,0,0) 
+   not canonical
+
+GSPAN STATISTICS
+total subisomorphism checks: 30134954
+   successful: 1341512
+   failed: 28793442
+   failed edge existence: 549943056
+   failed edge color: 6592619123
+   failed edge timestamp: 0
+   failed node degree: 1058699679
+   failed node duplicate: 1692252143
+   failed node color: 0
+DB support computations: 62
+   MIB support computations: 23994
+   MIB subisomorphism checks: 30043622
+      MIB successful subisomorphism checks: 1333385
+      MIB failed subisomorphism checks: 28710237
+   Shallow support computations: 0
+   Ego-based support computations: 0
+Infrequent pattern candidates: 0
+Frequent patterns: 62
+   Invalid intermediate LF patterns: 0
+Non-canonical pattern candidates: 68
+
+Mining done. Took 196.764041 seconds.
+
+saving results to collegemsg_ger_30min.txt.out.evomine.FULL.1.3.
+supp=2257
+0(0) --1[0]--> 1(0)
+
+supp=683
+0(0) --1[0]--> 1(0)
+0(0) --1[0]--> 2(0)
+
+supp=226
+0(0) --1[0]--> 1(0)
+0(0) --1[0]--> 2(0)
+0(0) --1[0]--> 3(0)
+
+supp=600
+0(0) --1[0]--> 1(0)
+0(0) --1[0]--> 2(0)
+0(0) --3[0]--> 3(0)
+
+supp=145
+0(0) --1[0]--> 1(0)
+0(0) --1[0]--> 2(0)
+2(0) --3[0]--> 0(0)
+
+supp=1877
+0(0) --1[0]--> 1(0)
+0(0) --3[0]--> 2(0)
+
+supp=1622
+0(0) --1[0]--> 1(0)
+0(0) --3[0]--> 2(0)
+0(0) --3[0]--> 3(0)
+
+supp=852
+0(0) --1[0]--> 1(0)
+0(0) --3[0]--> 2(0)
+2(0) --3[0]--> 0(0)
+
+supp=463
+0(0) --1[0]--> 1(0)
+0(0) --3[0]--> 2(0)
+2(0) --1[0]--> 3(0)
+
+supp=1764
+0(0) --1[0]--> 1(0)
+0(0) --3[0]--> 2(0)
+2(0) --3[0]--> 3(0)
+
+supp=468
+0(0) --1[0]--> 1(0)
+1(0) --1[0]--> 0(0)
+
+supp=153
+0(0) --1[0]--> 1(0)
+1(0) --1[0]--> 0(0)
+0(0) --1[0]--> 2(0)
+
+supp=369
+0(0) --1[0]--> 1(0)
+1(0) --1[0]--> 0(0)
+0(0) --3[0]--> 2(0)
+
+supp=207
+0(0) --1[0]--> 1(0)
+1(0) --1[0]--> 0(0)
+2(0) --1[0]--> 0(0)
+
+supp=385
+0(0) --1[0]--> 1(0)
+1(0) --1[0]--> 0(0)
+2(0) --3[0]--> 0(0)
+
+supp=153
+0(0) --1[0]--> 1(0)
+1(0) --1[0]--> 0(0)
+1(0) --1[0]--> 2(0)
+
+supp=369
+0(0) --1[0]--> 1(0)
+1(0) --1[0]--> 0(0)
+1(0) --3[0]--> 2(0)
+
+supp=207
+0(0) --1[0]--> 1(0)
+1(0) --1[0]--> 0(0)
+2(0) --1[0]--> 1(0)
+
+supp=385
+0(0) --1[0]--> 1(0)
+1(0) --1[0]--> 0(0)
+2(0) --3[0]--> 1(0)
+
+supp=439
+0(0) --1[0]--> 1(0)
+1(0) --3[0]--> 0(0)
+
+supp=145
+0(0) --1[0]--> 1(0)
+1(0) --3[0]--> 0(0)
+0(0) --1[0]--> 2(0)
+
+supp=365
+0(0) --1[0]--> 1(0)
+1(0) --3[0]--> 0(0)
+0(0) --3[0]--> 2(0)
+
+supp=109
+0(0) --1[0]--> 1(0)
+1(0) --3[0]--> 0(0)
+2(0) --1[0]--> 0(0)
+
+supp=388
+0(0) --1[0]--> 1(0)
+1(0) --3[0]--> 0(0)
+2(0) --3[0]--> 0(0)
+
+supp=47
+0(0) --1[0]--> 1(0)
+1(0) --3[0]--> 0(0)
+1(0) --1[0]--> 2(0)
+
+supp=390
+0(0) --1[0]--> 1(0)
+1(0) --3[0]--> 0(0)
+1(0) --3[0]--> 2(0)
+
+supp=94
+0(0) --1[0]--> 1(0)
+1(0) --3[0]--> 0(0)
+2(0) --1[0]--> 1(0)
+
+supp=397
+0(0) --1[0]--> 1(0)
+1(0) --3[0]--> 0(0)
+2(0) --3[0]--> 1(0)
+
+supp=429
+0(0) --1[0]--> 1(0)
+1(0) --1[0]--> 2(0)
+
+supp=251
+0(0) --1[0]--> 1(0)
+1(0) --1[0]--> 2(0)
+0(0) --1[0]--> 3(0)
+
+supp=389
+0(0) --1[0]--> 1(0)
+1(0) --1[0]--> 2(0)
+0(0) --3[0]--> 3(0)
+
+supp=12
+0(0) --1[0]--> 1(0)
+1(0) --1[0]--> 2(0)
+2(0) --1[0]--> 0(0)
+
+supp=22
+0(0) --1[0]--> 1(0)
+1(0) --1[0]--> 2(0)
+2(0) --3[0]--> 0(0)
+
+supp=123
+0(0) --1[0]--> 1(0)
+1(0) --1[0]--> 2(0)
+1(0) --1[0]--> 3(0)
+
+supp=347
+0(0) --1[0]--> 1(0)
+1(0) --1[0]--> 2(0)
+1(0) --3[0]--> 3(0)
+
+supp=207
+0(0) --1[0]--> 1(0)
+1(0) --1[0]--> 2(0)
+2(0) --1[0]--> 1(0)
+
+supp=109
+0(0) --1[0]--> 1(0)
+1(0) --1[0]--> 2(0)
+2(0) --3[0]--> 1(0)
+
+supp=134
+0(0) --1[0]--> 1(0)
+1(0) --1[0]--> 2(0)
+2(0) --1[0]--> 3(0)
+
+supp=342
+0(0) --1[0]--> 1(0)
+1(0) --1[0]--> 2(0)
+2(0) --3[0]--> 3(0)
+
+supp=1711
+0(0) --1[0]--> 1(0)
+1(0) --3[0]--> 2(0)
+
+supp=612
+0(0) --1[0]--> 1(0)
+1(0) --3[0]--> 2(0)
+0(0) --1[0]--> 3(0)
+
+supp=1456
+0(0) --1[0]--> 1(0)
+1(0) --3[0]--> 2(0)
+0(0) --3[0]--> 3(0)
+
+supp=199
+0(0) --1[0]--> 1(0)
+1(0) --3[0]--> 2(0)
+2(0) --3[0]--> 0(0)
+
+supp=1397
+0(0) --1[0]--> 1(0)
+1(0) --3[0]--> 2(0)
+1(0) --3[0]--> 3(0)
+
+supp=94
+0(0) --1[0]--> 1(0)
+1(0) --3[0]--> 2(0)
+2(0) --1[0]--> 1(0)
+
+supp=1463
+0(0) --1[0]--> 1(0)
+1(0) --3[0]--> 2(0)
+2(0) --3[0]--> 1(0)
+
+supp=359
+0(0) --1[0]--> 1(0)
+1(0) --3[0]--> 2(0)
+2(0) --1[0]--> 3(0)
+
+supp=1609
+0(0) --1[0]--> 1(0)
+1(0) --3[0]--> 2(0)
+2(0) --3[0]--> 3(0)
+
+supp=60533
+0(0) --3[0]--> 1(0)
+
+supp=37563
+0(0) --3[0]--> 1(0)
+0(0) --3[0]--> 2(0)
+
+supp=27238
+0(0) --3[0]--> 1(0)
+0(0) --3[0]--> 2(0)
+0(0) --3[0]--> 3(0)
+
+supp=33506
+0(0) --3[0]--> 1(0)
+1(0) --3[0]--> 0(0)
+
+supp=23278
+0(0) --3[0]--> 1(0)
+1(0) --3[0]--> 0(0)
+0(0) --3[0]--> 2(0)
+
+supp=29387
+0(0) --3[0]--> 1(0)
+1(0) --3[0]--> 0(0)
+2(0) --3[0]--> 0(0)
+
+supp=23278
+0(0) --3[0]--> 1(0)
+1(0) --3[0]--> 0(0)
+1(0) --3[0]--> 2(0)
+
+supp=29387
+0(0) --3[0]--> 1(0)
+1(0) --3[0]--> 0(0)
+2(0) --3[0]--> 1(0)
+
+supp=39426
+0(0) --3[0]--> 1(0)
+1(0) --3[0]--> 2(0)
+
+supp=35867
+0(0) --3[0]--> 1(0)
+1(0) --3[0]--> 2(0)
+0(0) --3[0]--> 3(0)
+
+supp=9497
+0(0) --3[0]--> 1(0)
+1(0) --3[0]--> 2(0)
+2(0) --3[0]--> 0(0)
+
+supp=24323
+0(0) --3[0]--> 1(0)
+1(0) --3[0]--> 2(0)
+1(0) --3[0]--> 3(0)
+
+supp=29387
+0(0) --3[0]--> 1(0)
+1(0) --3[0]--> 2(0)
+2(0) --3[0]--> 1(0)
+
+supp=31492
+0(0) --3[0]--> 1(0)
+1(0) --3[0]--> 2(0)
+2(0) --3[0]--> 3(0)
+

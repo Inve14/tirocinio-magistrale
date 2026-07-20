@@ -1,0 +1,55 @@
+Task 3
+
+---
+
+**Immagini 1, 2, 3 — Transition matrix MTM**
+Tre versioni con parametri diversi (L_MAX=4 originale, L_MAX=3 a 30min e 1h). Struttura identica in tutte e tre. Unica differenza: con L_MAX=4 domina il broadcast (un hub che scrive a persone nuove), con L_MAX=3 domina la conversazione ripetuta tra la stessa coppia.
+
+---
+
+**Immagine 4 — CCDF inter-event time**
+La curva si azzera già prima della soglia di 1 ora — quasi tutti i messaggi si susseguono entro un'ora. Questo giustifica la scelta di granularità sub-oraria per EvoMine.
+
+---
+
+**Immagine 5 — Statistiche IET e tabella granularità**
+Mediana 47s — i messaggi sono molto ravvicinati. Con 30min catturiamo il 98.6% degli IET, con 1h il 99.4%. Entrambe valide, ma 30min costa il doppio del tempo a EvoMine.
+
+
+
+Task 4
+
+---
+
+**Immagine 6 — Scalabilità TMC per N**
+TMC è velocissimo — max 71ms con 5000 eventi. Nessun problema computazionale, usiamo tutti i 5000 eventi.
+
+---
+
+**Immagine 7 — Scalabilità TMC per DELTA**
+Il numero di motif distinti resta costante a 60 per qualsiasi DELTA. I tempi sono tutti sotto 70ms. La scelta di DELTA non impatta la scalabilità.
+
+---
+
+**Immagine 8 — Confronto EvoMine 30min vs 1h**
+62 regole trovate a entrambe le granularità, 12 comparabili con MTM, 10 trovate anche in MTM. Risultati qualitativi identici — cambia solo il tempo di esecuzione (197s vs 97s) e la scala dei supporti.
+
+---
+
+**Immagine 9 — Le 10 regole comparabili MTM↔EvoMine**
+La regola chiave è `0102→03` — la più probabile in MTM (P≈0.40) ma con supporto EvoMine moderato. MTM misura probabilità condizionale, EvoMine frequenza assoluta — sono complementari.
+
+---
+
+**Immagine 10 — Archi attivi per bucket (30min)**
+Attività molto discontinua: pochi messaggi nei primi giorni, poi crescita graduale, burst finale nell'ultimo 5% del periodo (picco a bucket 707 con 97 archi).
+
+---
+
+**Immagine 11 — Crescita rete e novelty rate (30min)**
+50% degli utenti appare già al 68% del tempo, 90% al 94%. Novelty rate medio 62% — all'inizio quasi tutto è nuovo, nel burst finale scende sotto il 50% (gli utenti si riscrivono tra loro).
+
+---
+
+**Immagine 12 — Stessa analisi a 1 ora**
+Risultati identici alla versione a 30min. Novelty rate medio leggermente più alto (67.1%). La dinamica strutturale è la stessa — la scelta di granularità non cambia l'interpretazione.

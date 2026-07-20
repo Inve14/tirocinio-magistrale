@@ -1,0 +1,14 @@
+Task,Algoritmo,Dataset,N,Parametri,Tempo_s,Nota
+1,TMC,facebook_wall,3000,"L_MAX=4, delta=86400s",437.0,
+1,TMC,CollegeMsg,5000,"L_MAX=3, delta=86400s",244.0,
+1,TMC null (Time Shuffle),facebook_wall,3000,L_MAX=4,429.0,
+1,TMC null (Edge Shuffle),facebook_wall,3000,L_MAX=4,708.0,
+1,TMC null (Strogatz),facebook_wall,3000,L_MAX=4,5.0,
+1,TMC null (Time Shuffle),CollegeMsg,5000,L_MAX=3,42.0,
+1,TMC null (Edge Shuffle),CollegeMsg,5000,L_MAX=3,102.0,
+1,TMC null (Strogatz),CollegeMsg,5000,L_MAX=3,4.0,
+2,EvoMine,CollegeMsg,59835,"s=20000, e=3",,~pochi secondi
+2,EvoMine,facebook_wall,10000,"s=500, e=3",,non registrato
+3,TMC (benchmark),CollegeMsg,5000,"L_MAX=3, delta=86400s",0.071,
+4,EvoMine,CollegeMsg,5000,"s=1, e=3, delta=3600s",97.0,
+4,EvoMine,CollegeMsg,5000,"s=1, e=3, delta=1800s",197.0,
