@@ -89,7 +89,27 @@
   verificato), solo rietichettata con i codici corti p1..pN — probabilità
   calcolata escludendo lo stato di non-estensione 'S' dal denominatore,
   come in Task 3 dopo la correzione della correlatrice
-- Report: lab/task_5/task5_comparison.ipynb
+- **Chiarimento della correlatrice sulle 0 celle in comune**: le 0 celle
+  condivise tra le transition matrix finali sono attese per costruzione
+  (MTM ed EvoMine tracciano l'evoluzione della rete in modo diverso), non
+  un errore. Usare la stessa struttura di visualizzazione (transition
+  matrix, stesso formato heatmap) per entrambi gli algoritmi serve al
+  confronto qualitativo affiancato, non a garantire sovrapposizione
+  numerica — assi, codici e valori restano specifici di ciascun algoritmo.
+  Il confronto realmente informativo è sui pattern individuali della
+  codifica canonica condivisa: dei 148 codici totali, 3 pattern a 2 archi
+  sono condivisi tra MTM ed EvoMine (`p18`=`0_1_0-0_2_1`,
+  `p21`=`0_1_0-2_0_1`, `p36`=`0_1_0-1_0_1`). Le rispettive frequenze
+  relative (count/supporto del pattern sul totale dei pattern trovati da
+  ciascun algoritmo: 3202 su tutti i 60 motif MTM, 256498 sulle 62 regole
+  EvoMine) differiscono di 30-40× in valore assoluto (es. `p18`: 20.08% in
+  MTM contro 0.61% in EvoMine) ma conservano lo stesso ordinamento
+  qualitativo in entrambe le fonti (`p18 > p21 > p36`) — indicazione di
+  complementarità tra i due algoritmi più che di sovrapponibilità diretta.
+  Dettagli in `task_5/output_data/shared_patterns_comparison.csv` e
+  sezione "8. Discussion" del report.
+- Report: lab/task_5/task5_comparison.ipynb,
+  lab/task_5/report_task5_completo.docx / .pdf
 
 ## Dataset usati
 - CollegeMsg: lab/task_1/task_1_SNAP/CollegeMsg.txt
@@ -150,16 +170,19 @@ lab/
         └── structural_evolution_summary.txt
 └── task_5/             ← Confronto MTM↔EvoMine, codifica canonica GERANIO ✅
     ├── task5_comparison.ipynb
+    ├── report_task5_completo.docx / .pdf
     ├── output_png/
     │   ├── support_distribution.png
     │   ├── evomine_transition_matrix.png
     │   ├── mtm_transition_matrix_geranio.png
-    │   └── comparison_heatmaps.png
+    │   ├── comparison_heatmaps.png
+    │   └── shared_patterns_frequency.png    (freq. relativa dei 3 pattern condivisi, MTM vs EvoMine)
     └── output_data/
         ├── canonical_mapping.csv        (unione codici lunghi MTM+EvoMine → p1..pN, fonte)
         ├── evomine_top_rules.csv        (top 23 regole per supporto)
         ├── evomine_transition_matrix.csv
-        └── mtm_transition_matrix_geranio.csv
+        ├── mtm_transition_matrix_geranio.csv
+        └── shared_patterns_comparison.csv   (i 3 pattern condivisi: ruolo/count/freq.rel. in MTM vs EvoMine)
 ```
 
 ## Note tecniche importanti

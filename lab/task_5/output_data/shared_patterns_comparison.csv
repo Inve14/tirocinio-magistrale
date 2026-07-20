@@ -1,0 +1,4 @@
+codice_corto,stringa_canonica,ruolo_mtm,count_mtm,freq_relativa_mtm,ruolo_evomine,supporto_evomine,freq_relativa_evomine
+p18,0_1_0-0_2_1,prefisso a 2 archi (riga transition matrix),643.0,0.20081199250468457,regola completa (1 arco body + 1 arco head),1570,0.006120905426163167
+p21,0_1_0-2_0_1,prefisso a 2 archi (riga transition matrix),197.0,0.06152404747033104,regola completa (1 arco body + 1 arco head),1453,0.005664761518608332
+p36,0_1_0-1_0_1,prefisso a 2 archi (riga transition matrix),174.0,0.05434103685196752,regola completa (1 arco body + 1 arco head),360,0.0014035197155533377
